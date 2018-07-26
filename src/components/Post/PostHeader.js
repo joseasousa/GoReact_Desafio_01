@@ -1,14 +1,15 @@
 import React from 'react';
+import './post.css';
 
 
 const PostHeader = ({ data }) => (
-  <div>
-    <div>
-      <img className="avatar" src={data.photo} alt={data.name} />
+  <div className="post-header">
+    <div className="avatar">
+      <img src={data.photo} alt={data.name} />
     </div>
     <div>
-      <h3>{data.name}</h3>
-      <strong>{data.create_at}</strong>
+      <h3 className="name">{data.name}</h3>
+      <span className="time">há {data.create_at} min</span>
     </div>
   </div>
 );

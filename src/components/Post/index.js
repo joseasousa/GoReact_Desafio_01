@@ -3,7 +3,7 @@ import PostHeader from './PostHeader';
 import './post.css';
 
 const Post = ({ post }) => (
-  <div>
+  <div className="post">
     <PostHeader data={post} />
     <div>
       <p>{post.post}</p>
